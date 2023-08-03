@@ -19,8 +19,8 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: 'white',
-    fontSize: 16,
-    fontWeight: 'bold',
+    fontSize: 24,
+    fontFamily: 'Inter-Regular',
   },
   buttonContainer: {
     alignItems: 'flex-start',
