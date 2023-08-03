@@ -38,7 +38,7 @@ try {
 } catch {}
 
 const getStories = () => {
-  return [require("../components/Button/Button.stories.tsx")];
+  return [require("../src/components/*")];
 };
 
 configure(getStories, module, false);
