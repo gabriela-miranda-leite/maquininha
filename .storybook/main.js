@@ -9,4 +9,5 @@ module.exports = {
   core: {
     builder: 'webpack5',
   },
+  staticDirs: [{from: '../fonts', to: 'fonts'}],
 };
