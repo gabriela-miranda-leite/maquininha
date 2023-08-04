@@ -13,11 +13,16 @@ export const defaultTheme = {
       semiBold: '600',
     },
     sizes: {
-      sm: '0.875rem',
-      md: '1rem',
-      lg: '1.25rem',
-      xl: '1.5rem',
-      '2xl': '2rem',
+      sm: '12px',
+      md: '16px',
+      lg: '24px',
+      xl: '32px',
     },
+  },
+  spacing: {
+    sm: '8px',
+    md: '16px',
+    lg: '24px',
+    xl: '32px',
   },
 };
