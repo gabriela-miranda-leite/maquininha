@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
   buttonText: {
     color: 'white',
     fontSize: 24,
-    fontFamily: 'Inter-Regular',
+    fontFamily: 'Inter',
   },
   buttonContainer: {
     alignItems: 'flex-start',
