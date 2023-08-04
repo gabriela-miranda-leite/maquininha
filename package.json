@@ -49,6 +49,7 @@
     "@storybook/react": "^6.5.14",
     "@storybook/react-native": "^6.5.1",
     "@storybook/testing-library": "^0.0.13",
+    "@testing-library/react-native": "^12.2.0",
     "@tsconfig/react-native": "^2.0.2",
     "@types/jest": "^29.2.1",
     "@types/react": "^18.0.24",
