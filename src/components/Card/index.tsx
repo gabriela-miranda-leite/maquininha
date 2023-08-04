@@ -1,14 +1,14 @@
 import React from 'react';
 import * as S from './styles';
 
-interface CardProps {
+export interface CardProps {
   title: string;
   description: string;
   productImage?: string;
 }
 
 export const Card = ({title, description}: CardProps) => (
-  <S.Card>
+  <S.Card testID="card">
     <S.ProductImage source={require('../../images/machine-2.png')} />
     <S.InfoWrapper>
       <S.Title>{title}</S.Title>
