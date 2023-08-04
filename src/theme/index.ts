@@ -1,17 +1,16 @@
 export const defaultTheme = {
-  colors: {
-    background: '#',
-    primary: '#E7B812',
-    primaryDark: '#C47F17',
-  },
+  colors: {},
   fonts: {
-    primary: {
-      bold: 'Inter-Bold',
-      extraLight: 'Inter-ExtraLight',
-      light: 'Inter-Light',
-      medium: 'Inter-Medium',
-      regular: 'Inter-Regular',
-      semiBold: 'Inter-SemiBold',
+    family: {
+      primary: 'Inter',
+    },
+    weight: {
+      bold: '700',
+      extraLight: '200',
+      light: '300',
+      medium: '500',
+      regular: '400',
+      semiBold: '600',
     },
     sizes: {
       sm: '0.875rem',
