@@ -2,11 +2,11 @@ import React from 'react';
 import * as S from './styles';
 import {InfoProps} from './info.type';
 
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import {Horse, Heart, Cube} from 'phosphor-react-native';
 
 export const Info = ({description, icon}: InfoProps) => (
   <S.Info testID="info">
-    <Icon name="calendar-today" size={20} color="#32a" />
+    <Heart color="#AE2983" weight="fill" size={32} />
     <S.Description>{description}</S.Description>
   </S.Info>
 );
