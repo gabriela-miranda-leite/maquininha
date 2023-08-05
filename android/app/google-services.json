@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "977230083610",
+    "project_id": "maquininha-ton-teste",
+    "storage_bucket": "maquininha-ton-teste.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:977230083610:android:2bd340f907bd3f0efa83a3",
+        "android_client_info": {
+          "package_name": "com.maquininhaton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "977230083610-t2i3j86v6ardndpogobdqtif721ff7cb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPilegOMq7maAplLbzDH1VjcjCaJaTGSc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "977230083610-t2i3j86v6ardndpogobdqtif721ff7cb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
