@@ -5,13 +5,12 @@ export const Card = styled.View`
   align-items: center;
   flex-direction: row;
   height: 120px;
-  padding: ${defaultTheme.spacing.lg};
   width: 100%;
 `;
 
 export const InfoWrapper = styled.View`
   padding-left: ${defaultTheme.spacing.md};
-  row-gap: ${defaultTheme.spacing.sm};
+  row-gap: ${defaultTheme.spacing.xsm};
   width: 85%;
 `;
 
