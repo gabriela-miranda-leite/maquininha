@@ -1,6 +1,7 @@
 type Icon =
   | 'free'
   | 'businessDay'
+  | 'cellphone'
   | 'wifi'
   | 'nfc'
   | 'sms'
