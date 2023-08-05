@@ -2,6 +2,8 @@ import React from 'react';
 
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {Machines, MachineInfo} from '../screens';
+import {Icons} from '../components/';
+import {defaultTheme} from '../theme';
 
 export type RootStackParamList = {
   Machines: undefined;
@@ -14,9 +16,12 @@ export const Routes: React.FC = () => {
   return (
     <Navigation.Navigator
       screenOptions={{
+        headerLeft: () => <Icons type="ListBullets" />,
+        headerRight: () => <Icons type="Question" />,
         headerShown: false,
-        headerTransparent: false,
-        headerTintColor: '#1E2047',
+        headerStyle: {backgroundColor: `${defaultTheme.colors.primary}`},
+        headerTintColor: `${defaultTheme.colors.white}`,
+        headerTitleAlign: 'center',
         headerTitleStyle: {
           fontWeight: 'bold',
         },
