@@ -18,14 +18,16 @@ export const Machines = styled.FlatList<StyledFlatListProps<DataProps>>`
 
 export const Header = styled.View``;
 
-export const Title = styled.Text`
+export const Title = styled.Text.attrs({numberOfLines: 1})`
+  color: ${defaultTheme.colors.text.dark};
   font-family: ${defaultTheme.fonts.family.primary};
   font-size: ${defaultTheme.fonts.sizes.lg};
   font-weight: ${defaultTheme.fonts.weight.bold};
   margin-bottom: ${defaultTheme.spacing.xsm};
 `;
 
-export const Description = styled.Text`
+export const Description = styled.Text.attrs({numberOfLines: 2})`
+  color: ${defaultTheme.colors.text.light};
   font-family: ${defaultTheme.fonts.family.primary};
   font-size: ${defaultTheme.fonts.sizes.md};
   font-weight: ${defaultTheme.fonts.weight.semiBold};

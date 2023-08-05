@@ -15,12 +15,14 @@ export const InfoWrapper = styled.View`
 `;
 
 export const Title = styled.Text.attrs({numberOfLines: 1})`
+  color: ${defaultTheme.colors.text.dark};
   font-family: ${defaultTheme.fonts.family.primary};
   font-size: ${defaultTheme.fonts.sizes.md};
   font-weight: ${defaultTheme.fonts.weight.bold};
 `;
 
 export const Description = styled.Text.attrs({numberOfLines: 1})`
+  color: ${defaultTheme.colors.text.light};
   font-family: ${defaultTheme.fonts.family.primary};
   font-size: ${defaultTheme.fonts.sizes.sm};
   font-weight: ${defaultTheme.fonts.weight.regular};
