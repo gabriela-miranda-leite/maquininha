@@ -1,5 +1,12 @@
 export const defaultTheme = {
-  colors: {},
+  colors: {
+    primary: '#009420',
+    white: '#ffffff',
+    text: {
+      dark: '#000000',
+      light: '#919DAB',
+    },
+  },
   fonts: {
     family: {
       primary: 'Inter',
