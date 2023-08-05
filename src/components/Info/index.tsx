@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 
 export const Info = ({description, icon}: InfoProps) => (
   <S.Info testID="info">
-    <Icon name="add" size={20} color="#32a" />
+    <Icon name="calendar-today" size={20} color="#32a" />
     <S.Description>{description}</S.Description>
   </S.Info>
 );
