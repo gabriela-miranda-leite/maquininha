@@ -1,7 +1,8 @@
 import React from 'react';
 import {screen, render} from '@testing-library/react-native';
 
-import {Card, CardProps} from '.';
+import {Card} from '.';
+import {CardProps} from './card.type';
 
 const defaultProps: CardProps = {
   title: 'Maquininha T1',

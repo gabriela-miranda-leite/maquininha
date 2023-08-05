@@ -1,11 +1,7 @@
 import React from 'react';
-import * as S from './styles';
 
-export interface CardProps {
-  title: string;
-  description: string;
-  productImage?: string;
-}
+import {CardProps} from './card.type';
+import * as S from './styles';
 
 export const Card = ({title, description}: CardProps) => (
   <S.Card testID="card">
