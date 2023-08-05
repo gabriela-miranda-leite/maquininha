@@ -27,6 +27,8 @@ export const Machines = () => {
     </S.Header>
   );
 
+  const renderFooter = () => <S.Footer />;
+
   const renderItem: ListRenderItem<DataProps> = ({item}) => (
     <Card title={item.name} description={item.description} />
   );
@@ -37,6 +39,7 @@ export const Machines = () => {
         data={data}
         renderItem={renderItem}
         ListHeaderComponent={renderHeader}
+        ListFooterComponent={renderFooter}
         showsVerticalScrollIndicator={false}
       />
     </S.MachinesWrapper>

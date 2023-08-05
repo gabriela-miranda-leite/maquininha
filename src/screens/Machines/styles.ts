@@ -33,3 +33,7 @@ export const Description = styled.Text.attrs({numberOfLines: 2})`
   font-weight: ${defaultTheme.fonts.weight.semiBold};
   margin-bottom: ${defaultTheme.spacing.md};
 `;
+
+export const Footer = styled.View`
+  margin-bottom: ${defaultTheme.spacing.lg};
+`;
