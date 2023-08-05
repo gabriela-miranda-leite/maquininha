@@ -5,12 +5,16 @@ import StorybookUIRoot from './.ondevice/Storybook';
 import Config from 'react-native-config';
 
 import {Routes} from './src/routes';
+import {SafeAreaView, StatusBar} from 'react-native';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <Routes />
-    </NavigationContainer>
+    <SafeAreaView style={{flex: 1}}>
+      <StatusBar backgroundColor="#1ec677" />
+      <NavigationContainer>
+        <Routes />
+      </NavigationContainer>
+    </SafeAreaView>
   );
 };
 
