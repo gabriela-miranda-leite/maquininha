@@ -20,6 +20,7 @@ export const defaultTheme = {
     },
   },
   spacing: {
+    xsm: '4px',
     sm: '8px',
     md: '16px',
     lg: '24px',
