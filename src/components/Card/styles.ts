@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import {defaultTheme} from '../../theme';
 
-export const Card = styled.View`
+export const Card = styled.TouchableOpacity.attrs({activeOpacity: 0.1})`
   align-items: center;
   flex-direction: row;
   height: 120px;
@@ -29,5 +29,6 @@ export const Description = styled.Text.attrs({numberOfLines: 1})`
 `;
 
 export const ProductImage = styled.Image.attrs({resizeMode: 'contain'})`
-  width: 15%;
+  height: 50px;
+  width: 100px;
 `;

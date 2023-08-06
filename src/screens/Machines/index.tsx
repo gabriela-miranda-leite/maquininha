@@ -29,8 +29,10 @@ export const Machines = () => {
 
   const renderFooter = () => <S.Footer />;
 
-  const renderItem: ListRenderItem<DataProps> = ({item}) => (
-    <Card title={item.name} description={item.description} />
+  const renderItem: ListRenderItem<DataProps> = ({
+    item: {name, description, id, image},
+  }) => (
+    <Card title={name} description={description} id={id} productImage={image} />
   );
 
   return (

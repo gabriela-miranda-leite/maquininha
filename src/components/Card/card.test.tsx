@@ -7,6 +7,8 @@ import {CardProps} from './card.type';
 const defaultProps: CardProps = {
   title: 'Maquininha T1',
   description: 'À partir de 12x de R$ 1,90',
+  productImage: '',
+  id: '1',
 };
 
 const create = (props = defaultProps) => render(<Card {...props} />);

@@ -1,14 +1,36 @@
 import React from 'react';
 
+import {useNavigation} from '@react-navigation/native';
+import {NativeStackNavigationProp} from '@react-navigation/native-stack';
+import {RootStackParamList} from '../../routes';
+
 import {CardProps} from './card.type';
 import * as S from './styles';
 
-export const Card = ({title, description}: CardProps) => (
-  <S.Card testID="card">
-    <S.ProductImage source={require('../../images/machine-2.png')} />
-    <S.InfoWrapper>
-      <S.Title>{title}</S.Title>
-      <S.Description numberOfLines={1}>{description}</S.Description>
-    </S.InfoWrapper>
-  </S.Card>
-);
+type ProfileScreenProps = NativeStackNavigationProp<
+  RootStackParamList,
+  'MachineInfo'
+>;
+
+export const Card = ({title, description, id, productImage}: CardProps) => {
+  const navigation = useNavigation<ProfileScreenProps>();
+
+  return (
+    <S.Card
+      testID="card"
+      onPress={() => navigation.navigate('MachineInfo', {name: title, id})}
+      key={id}>
+      <S.ProductImage
+        source={{
+          uri: `${productImage}`,
+        }}
+        style={{width: 100, height: 100}} // Adicione estilos para garantir a visibilidade
+      />
+
+      <S.InfoWrapper>
+        <S.Title>{title}</S.Title>
+        <S.Description numberOfLines={1}>{description}</S.Description>
+      </S.InfoWrapper>
+    </S.Card>
+  );
+};
