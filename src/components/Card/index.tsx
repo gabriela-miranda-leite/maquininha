@@ -24,7 +24,6 @@ export const Card = ({title, description, id, productImage}: CardProps) => {
         source={{
           uri: `${productImage}`,
         }}
-        style={{width: 100, height: 100}} // Adicione estilos para garantir a visibilidade
       />
 
       <S.InfoWrapper>
