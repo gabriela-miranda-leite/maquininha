@@ -11,6 +11,7 @@ export const SlideImage = ({images}: SlideImageProps) => {
       <S.OptionWrapper>
         {images.map((img, index) => (
           <S.OptionImage
+            testID="optionImage"
             key={index}
             onPress={() => setMainImage(index)}
             isImageMain={index === mainImage}>
@@ -23,7 +24,7 @@ export const SlideImage = ({images}: SlideImageProps) => {
 
   return (
     <S.SlideImage testID="slideImage">
-      <S.MainImage source={{uri: `${images[mainImage]}`}} />
+      <S.MainImage testID="mainImage" source={{uri: `${images[mainImage]}`}} />
       {renderOptionsImages()}
     </S.SlideImage>
   );
