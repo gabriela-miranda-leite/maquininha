@@ -29,6 +29,6 @@ export const Description = styled.Text.attrs({numberOfLines: 1})`
 `;
 
 export const ProductImage = styled.Image.attrs({resizeMode: 'contain'})`
-  height: 50px;
-  width: 100px;
+  width: 80px;
+  height: 80px;
 `;
