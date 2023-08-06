@@ -9,6 +9,7 @@ const defaultProps: CardProps = {
   description: 'À partir de 12x de R$ 1,90',
   productImage: '',
   id: '1',
+  onPress: jest.fn(),
 };
 
 const create = (props = defaultProps) => render(<Card {...props} />);
