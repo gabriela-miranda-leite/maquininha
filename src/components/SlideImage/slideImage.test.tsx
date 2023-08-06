@@ -14,11 +14,11 @@ const defaultProps: SlideImageProps = {
 
 const create = (props = defaultProps) => render(<SlideImage {...props} />);
 
-describe('Icons', () => {
-  it('render correctly Icons component', () => {
+describe('SlideImage', () => {
+  it('render correctly SlideImage component', () => {
     create();
-    const IconsComponent = screen.queryByTestId('slideImage');
+    const SlideImageComponent = screen.queryByTestId('slideImage');
 
-    expect(IconsComponent).toBeTruthy();
+    expect(SlideImageComponent).toBeTruthy();
   });
 });
