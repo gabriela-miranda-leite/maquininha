@@ -2,6 +2,8 @@
 
 # Maquininha Ton 🪙
 
+<div align="center"><img src="./.github/banner.png" width=700px/></div>
+
 #### Listagem das maquininhas Ton, apresentando seus diferenciais e vantagens.
 
 ### 🧪 Tecnologias Utilizadas
