@@ -1,17 +1,13 @@
 import {RouteProp} from '@react-navigation/native';
-export interface MachineInfoProps {
-  route: RouteProp<
-    {
-      params: {
-        id: string;
-      };
-    },
-    'params'
-  >;
-}
+import {RootStackParamList} from '../../routes';
+import {IconDetailType} from '../../components/IconDetail/iconDetail.type';
 
+type MachineInfoScreenRouteProp = RouteProp<RootStackParamList, 'MachineInfo'>;
+export type MachineInfoProps = {
+  route: MachineInfoScreenRouteProp;
+};
 interface BenefitsProps {
-  type: string;
+  type: IconDetailType;
   description: string;
 }
 

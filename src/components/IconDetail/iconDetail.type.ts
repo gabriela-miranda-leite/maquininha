@@ -1,4 +1,4 @@
-type IconDetailType =
+export type IconDetailType =
   | 'free'
   | 'businessDay'
   | 'cellphone'
