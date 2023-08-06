@@ -1,13 +1,15 @@
 import React, {useState, useEffect} from 'react';
 import {ListRenderItem} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 import {Card} from '../../components';
 import {getAllByMachines} from '../../services';
 
-import {DataProps} from './machines.types';
+import {DataProps, ProfileScreenProps} from './machines.types';
 import * as S from './styles';
 
 export const Machines = () => {
+  const navigation = useNavigation<ProfileScreenProps>();
   const [data, setData] = useState<DataProps[]>([]);
 
   useEffect(() => {
@@ -32,7 +34,13 @@ export const Machines = () => {
   const renderItem: ListRenderItem<DataProps> = ({
     item: {name, description, id, image},
   }) => (
-    <Card title={name} description={description} id={id} productImage={image} />
+    <Card
+      title={name}
+      description={description}
+      id={id}
+      productImage={image}
+      onPress={() => navigation.navigate('MachineInfo', {name, id})}
+    />
   );
 
   return (

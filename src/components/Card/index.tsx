@@ -1,18 +1,17 @@
 import React from 'react';
 
-import {useNavigation} from '@react-navigation/native';
-
-import {CardProps, ProfileScreenProps} from './card.type';
+import {CardProps} from './card.type';
 import * as S from './styles';
 
-export const Card = ({title, description, id, productImage}: CardProps) => {
-  const navigation = useNavigation<ProfileScreenProps>();
-
+export const Card = ({
+  title,
+  description,
+  id,
+  productImage,
+  onPress,
+}: CardProps) => {
   return (
-    <S.Card
-      testID="card"
-      onPress={() => navigation.navigate('MachineInfo', {name: title, id})}
-      key={id}>
+    <S.Card testID="card" onPress={onPress} key={id}>
       <S.ProductImage
         source={{
           uri: `${productImage}`,
