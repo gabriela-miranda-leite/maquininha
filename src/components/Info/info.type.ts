@@ -11,10 +11,6 @@ type Icon =
   | 'touchscreen'
   | 'pix';
 
-enum IconProps {
-  free = 'truck-outline',
-}
-
 export interface InfoProps {
   icon: Icon;
   description: string;
