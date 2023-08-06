@@ -51,5 +51,5 @@ npm run storybook
 #### Tests e coverage
 
 ```bash
-npm run stest -- --coverage.
+npm run test -- --coverage.
 ```
