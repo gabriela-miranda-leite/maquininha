@@ -1,16 +1,9 @@
 import React from 'react';
 
 import {useNavigation} from '@react-navigation/native';
-import {NativeStackNavigationProp} from '@react-navigation/native-stack';
-import {RootStackParamList} from '../../routes';
 
-import {CardProps} from './card.type';
+import {CardProps, ProfileScreenProps} from './card.type';
 import * as S from './styles';
-
-type ProfileScreenProps = NativeStackNavigationProp<
-  RootStackParamList,
-  'MachineInfo'
->;
 
 export const Card = ({title, description, id, productImage}: CardProps) => {
   const navigation = useNavigation<ProfileScreenProps>();
