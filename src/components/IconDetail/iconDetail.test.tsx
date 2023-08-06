@@ -15,7 +15,9 @@ describe('IconDetail', () => {
   it('render correctly IconDetail component', () => {
     create();
     const IconDetailComponent = screen.queryByTestId('iconDetail');
+    const TextComponent = screen.queryByText(defaultProps.description);
 
     expect(IconDetailComponent).toBeTruthy();
+    expect(TextComponent).toBeTruthy();
   });
 });
