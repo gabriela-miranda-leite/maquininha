@@ -9,15 +9,23 @@ export const getAllByMachines = () => {
         resolve(snapshot.val());
       })
       .catch(error => {
-        console.error('Erro ao buscar dados: ', error);
         reject(error);
       });
   });
 };
 
-export const getByMachine = (id: string) =>
-  database()
-    .ref(`/machines/${id}`)
-    .on('value', snapshot => {
-      return snapshot.val();
-    });
+export const getByMachine = (id: string) => {
+  return new Promise((resolve, reject) => {
+    database()
+      .ref(`/machines/${id}`)
+      .on(
+        'value',
+        snapshot => {
+          resolve(snapshot.val());
+        },
+        error => {
+          reject(error);
+        },
+      );
+  });
+};
