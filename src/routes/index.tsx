@@ -7,7 +7,7 @@ import {defaultTheme} from '../theme';
 
 export type RootStackParamList = {
   Machines: undefined;
-  MachineInfo: {name: string};
+  MachineInfo: {name: string; id: string};
 };
 
 const Navigation = createNativeStackNavigator<RootStackParamList>();
@@ -18,7 +18,7 @@ export const Routes: React.FC = () => {
       screenOptions={{
         headerLeft: () => <Icons type="ListBullets" />,
         headerRight: () => <Icons type="Question" />,
-        headerShown: false,
+        headerShown: true,
         headerStyle: {backgroundColor: `${defaultTheme.colors.primary}`},
         headerTintColor: `${defaultTheme.colors.white}`,
         headerTitleAlign: 'center',
@@ -29,12 +29,12 @@ export const Routes: React.FC = () => {
       <Navigation.Screen
         name="Machines"
         component={Machines}
-        options={{headerShown: true, title: 'Maquininhas'}}
+        options={{title: 'Maquininhas'}}
       />
       <Navigation.Screen
         name="MachineInfo"
         component={MachineInfo}
-        options={{headerShown: true, title: 'T3 hehe'}}
+        options={({route}) => ({title: route.params.name})}
       />
     </Navigation.Navigator>
   );
