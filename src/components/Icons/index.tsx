@@ -25,7 +25,7 @@ export const Icons = ({type}: IconsProps) => {
   };
 
   return (
-    <S.Icons onPress={onPress}>
+    <S.Icons testID="icons" onPress={onPress}>
       <IconComponent color={defaultTheme.colors.white} />
     </S.Icons>
   );
