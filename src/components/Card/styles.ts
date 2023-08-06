@@ -1,7 +1,7 @@
 import styled from 'styled-components/native';
 import {defaultTheme} from '../../theme';
 
-export const Card = styled.TouchableOpacity.attrs({activeOpacity: 0.1})`
+export const Card = styled.TouchableOpacity.attrs({activeOpacity: 0.6})`
   align-items: center;
   flex-direction: row;
   height: 120px;
