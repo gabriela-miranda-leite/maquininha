@@ -14,5 +14,4 @@ type IconDetailType =
 export interface IconDetailProps {
   type: IconDetailType;
   description: string;
-  key: number;
 }
