@@ -34,7 +34,7 @@ export const Routes: React.FC = () => {
       <Navigation.Screen
         name="MachineInfo"
         component={MachineInfo}
-        options={({route}) => ({title: route.params.name})}
+        options={({route}) => ({title: route?.params?.name ?? 'Maquininha'})}
       />
     </Navigation.Navigator>
   );
