@@ -7,6 +7,7 @@ export const IconDetail = styled.View`
 `;
 
 export const TextDetail = styled.Text.attrs({numberOfLines: 1})`
+  color: ${defaultTheme.colors.text.dark};
   font-family: ${defaultTheme.fonts.family.primary};
   font-size: ${defaultTheme.fonts.sizes.md};
   font-weight: ${defaultTheme.fonts.weight.semiBold};
