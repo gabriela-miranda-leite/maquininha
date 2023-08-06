@@ -31,11 +31,11 @@ const iconComponents = {
   touchscreen: FingerprintSimple,
 };
 
-export const IconDetail = ({type, description, key}: IconDetailProps) => {
+export const IconDetail = ({type, description}: IconDetailProps) => {
   const IconComponent = iconComponents[type];
 
   return (
-    <S.IconDetail key={key}>
+    <S.IconDetail>
       <IconComponent color={defaultTheme.colors.primary} size={24} />
       <S.TextDetail>{description}</S.TextDetail>
     </S.IconDetail>
