@@ -1,5 +1,5 @@
 import React from 'react';
-import {screen, render} from '@testing-library/react-native';
+import {fireEvent, screen, render} from '@testing-library/react-native';
 
 import {Card} from '.';
 import {CardProps} from './card.type';
@@ -18,7 +18,17 @@ describe('Card', () => {
   it('render correctly Card component', () => {
     create();
     const CardComponent = screen.queryByTestId('card');
+    const TextComponent = screen.queryByText(defaultProps.title);
 
     expect(CardComponent).toBeTruthy();
+    expect(TextComponent).toBeTruthy();
+  });
+
+  it('should call onPress when pressed', () => {
+    const {getByTestId} = create();
+    const CardComponent = getByTestId('card');
+    fireEvent.press(CardComponent);
+
+    expect(defaultProps.onPress).toHaveBeenCalled();
   });
 });
