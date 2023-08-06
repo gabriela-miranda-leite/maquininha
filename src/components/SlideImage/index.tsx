@@ -22,7 +22,7 @@ export const SlideImage = ({images}: SlideImageProps) => {
   };
 
   return (
-    <S.SlideImage>
+    <S.SlideImage testID="slideImage">
       <S.MainImage source={{uri: `${images[mainImage]}`}} />
       {renderOptionsImages()}
     </S.SlideImage>

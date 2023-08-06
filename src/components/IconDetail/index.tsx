@@ -35,7 +35,7 @@ export const IconDetail = ({type, description}: IconDetailProps) => {
   const IconComponent = iconComponents[type];
 
   return (
-    <S.IconDetail>
+    <S.IconDetail testID="iconDetail">
       <IconComponent color={defaultTheme.colors.primary} size={24} />
       <S.TextDetail>{description}</S.TextDetail>
     </S.IconDetail>
