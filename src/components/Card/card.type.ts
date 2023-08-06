@@ -11,5 +11,4 @@ export interface CardProps {
   id: string;
   description: string;
   productImage: string;
-  showImages: string[];
 }
